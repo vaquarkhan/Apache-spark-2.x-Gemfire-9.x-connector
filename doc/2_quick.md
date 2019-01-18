@@ -17,7 +17,6 @@ You need 2 terminals to follow along, one for Geode shell `gfsh`, and one for Sp
 ### Geode `gfsh` terminal
 In this terminal, start Geode cluster, deploy Spark Geode Connector's geode-function jar, and create demo regions.
 
-#### Note : If you already setup env variable on computer not required step Set up environment variables:
  
 
 Set up environment variables:
