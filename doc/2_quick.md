@@ -89,6 +89,11 @@ Start spark-shell:
 bin/spark-shell --master local[*] --jars $CONNECTOR/geode-spark-connector/build/libs/geode-spark-connector-1.0.0.jar,$GEODE/lib/geode-dependencies.jar
 ```
 
+#### If already setup SPARK_HOME then ue following
+```
+spark-shell --master local[*] --jars $CONNECTOR/geode-spark-connector/build/libs/geode-spark-connector-1.0.0.jar,$GEODE/lib/geode-dependencies.jar
+```
+
 Check Geode locator property in the Spark shell:
 ```
 scala> sc.getConf.get("spark.geode.locators")
