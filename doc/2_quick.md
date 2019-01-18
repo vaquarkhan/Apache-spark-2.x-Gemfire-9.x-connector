@@ -32,7 +32,7 @@ export GF_JAVA=$JAVA_HOME/bin/java
 #### Windows :
 ```
 setx -m JAVA_HOME "C:\Program Files\Java\jdk1.8.0_131"
-setx -m GEODE "C:\vaquarkhan\Gemfire 9.2.2\pivotal-gemfire-9.2.2\bin"
+setx -m GEODE "C:\vaquarkhan\Gemfire 9.2.2\pivotal-gemfire-9.2.2"
 setx -m CONNECTOR "C:\Users\vaquarkhan\Documents\code\geode-spark-connector-develop"
 setx -m CLASSPATH $CLASSPATH:$GEODE/lib/geode-dependencies.jar:$GEODE/lib/gfsh-dependencies.jar
 setx -m PATH $PATH:$GEODE/bin
