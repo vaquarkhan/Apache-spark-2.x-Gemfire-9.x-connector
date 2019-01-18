@@ -17,6 +17,9 @@ You need 2 terminals to follow along, one for Geode shell `gfsh`, and one for Sp
 ### Geode `gfsh` terminal
 In this terminal, start Geode cluster, deploy Spark Geode Connector's geode-function jar, and create demo regions.
 
+#### Note : If you already setup env variable on computer not required step Set up environment variables:
+ 
+
 Set up environment variables:
 ```
 export JAVA_HOME=<path to JAVA installation>
@@ -44,6 +47,11 @@ gfsh>create region --name=int_str_region --type=PARTITION --key-constraint=java.
 Deploy Spark Geode Connector's geode-function jar (`geode-functions-1.0.0.jar`):
 ```
 gfsh>deploy --jar=<path to connector project>/geode-functions/build/libs/geode-functions-1.0.0.jar
+
+#### If you run gradle build then ui will get following jar name and in window need following path 
+
+deploy --jar=<path to connector project>/geode-functions/build/libs/geode-functions-1.0.0.SNAPSHOT.jar
+
 ```
 
 ### Spark shell terminal
