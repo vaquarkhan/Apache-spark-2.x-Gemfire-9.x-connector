@@ -94,6 +94,12 @@ bin/spark-shell --master local[*] --jars $CONNECTOR/geode-spark-connector/build/
 spark-shell --master local[*] --jars $CONNECTOR/geode-spark-connector/build/libs/geode-spark-connector-1.0.0.jar,$GEODE/lib/geode-dependencies.jar
 ```
 
+#### With Jar
+```
+spark-shell --master local[*] --jars C:\Users\vaquarkhan\Documents\code\geode-dependencies.jar,C:\Users\vaquarkhan\Documents\code\geode-spark-connector.jar,C:\Users\vaquarkhan\Documents\code\geode-core-9.2.2.jar,C:\Users\vaquarkhan\Documents\code\log4j-api-2.8.2.jar,C:\Users\vaquarkhan\Documents\code\log4j-core-2.8.2.jar,C:\Users\vaquarkhan\Documents\code\commons-validator-1.6.jar,C:\Users\vaquarkhan\Documents\code\fastutil-7.1.0.jar,C:\Users\vaquarkhan\Documents\code\shiro-core-1.3.2.jar
+```
+
+
 Check Geode locator property in the Spark shell:
 ```
 scala> sc.getConf.get("spark.geode.locators")
