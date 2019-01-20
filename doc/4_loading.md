@@ -37,9 +37,9 @@ import org.apache.geode.spark.connector._
 val opConf = Map(PreferredPartitionerPropKey -> ServerSplitsPartitionerName,
                  NumberPartitionsPerServerPropKey -> "3")
 
-val rdd1 = sc.geodeRegion[String, Int]("str_int_region", opConf = opConf)
+val rdd1 = sc.geodeRegion[String, Int]("int_str_region", opConf = opConf)
 // or
-val rdd2 = sc.geodeRegion[String, Int]("str_int_region", connConf, opConf)  
+val rdd2 = sc.geodeRegion[String, Int]("int_str_region", connConf, opConf)  
 ```
 
 
